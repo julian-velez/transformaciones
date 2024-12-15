@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Arial";
+}
+
+.container {
+  border: 1px solid;
+  display: flex;
+}
+
+
+
+.element {
+  /* transform: translate(100px, 100px); */
+  /* transform: rotate(2turn); */
+  /*transform: scale(2,1);*/
+  margin: 60px;
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  transition: .3s;
+}
+
+.container:hover .element {
+  transform: translate(100%, 100%) scale(1.3) rotate(80deg);
+}
